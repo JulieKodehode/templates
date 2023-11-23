@@ -1,0 +1,90 @@
+:root {
+	--primaryBlack: #0d0d0d;
+	--primaryWhite: #fdfdfd;
+
+	--primaryColor: green;
+	--secondaryColor: forestgreen;
+	--accentColor: limegreen;
+
+	--primaryFontFamily: fantasy;
+	--secondaryFontFamily: Helvetica;
+}
+
+/* Global CSS selectors */
+
+/* Default font-family whole page */
+* {
+	font-family: var(--primaryFontFamily);
+}
+
+.bodyNoMargin {
+	margin: 0;
+}
+
+/* Flex classes */
+.flexRow {
+	display: flex;
+}
+
+.flexColumn {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Elements only working when flex is applied first */
+.justifyCenter {
+	justify-content: center;
+}
+
+.justifyBetween {
+	justify-content: space-between;
+}
+
+.alignCenter {
+	align-items: center;
+}
+
+.gapOne {
+	gap: 1em;
+}
+
+/* Responsive sizes */
+.widthResponsiveSmall {
+	min-width: 50%;
+	min-height: 50%;
+}
+
+.widthResponsiveBig {
+	min-width: 100%;
+	min-height: 100%;
+}
+
+/* Personal styles */
+.listStyleRemover {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.noUnderscore {
+	text-decoration: none;
+}
+
+.section {
+	min-height: 100vh;
+}
+
+/* HEADER */
+.header {
+	background-color: var(--primaryColor);
+}
+
+/* MAIN */
+.main h1 {
+	color: var(--secondaryColor);
+}
+
+/* FOOTER */
+.footer p {
+	color: var(--accentColor);
+	font-family: var(--secondaryFontFamily);
+}
